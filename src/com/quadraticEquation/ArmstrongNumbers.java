@@ -3,7 +3,7 @@ package com.quadraticEquation;
 /**
  * Created by Oleksandr_Mosin on 10/10/2016.
  */
-public class ArmstrongNumbers { 
+public class ArmstrongNumbers {
     public static void runArmstrongNumbers(String line){
         line = line.replaceAll(" ","");
         final double length = line.length();
