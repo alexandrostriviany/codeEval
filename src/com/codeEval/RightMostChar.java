@@ -1,6 +1,4 @@
-package com.quadraticEquation;
-
-import java.util.ArrayList;
+package com.codeEval;
 
 /**
  * Created by Oleksandr_Mosin on 10/5/2016.

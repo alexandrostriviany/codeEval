@@ -1,4 +1,4 @@
-package com.quadraticEquation;
+package com.codeEval;
 
 import java.io.*;
 

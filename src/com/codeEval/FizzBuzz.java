@@ -1,4 +1,4 @@
-package com.quadraticEquation;
+package com.codeEval;
 
 /**
  * Created by Oleksandr_Mosin on 9/29/2016.
