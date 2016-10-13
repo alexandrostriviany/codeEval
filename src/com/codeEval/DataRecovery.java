@@ -17,10 +17,10 @@ public class DataRecovery {
         int sum = 0;
         int sum1 = 0;
         for (String q:numArr) {
-            sum = sum + Integer.parseInt(q);
+            sum += Integer.parseInt(q);
         }
         for (int w = 1; w < wordArr.length + 1; w++) {
-            sum1 = sum1 + w;
+            sum1+= w;
         }
         lostValue = sum1 - sum;
 
