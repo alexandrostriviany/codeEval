@@ -16,5 +16,6 @@ public class Main {
         WordToDigit.runWordToDigit("one;two;three;ass;six");
         LowestUniqueNumber.runLovestUniqueNumber("1 2 2 6 9 8 2 1 2 8 6");
         OddNumbers.runOddNumbers();
+        Football.runFootball("24 3 42 29 7 | 25 | 22 | 11 12 | 46 | 26 42 21 6 | 13 28 6 | 44 39 | 46 1 2 15 4 | 38 41 16 | 26 27 13 | 17 | 26 30 17 22 45 41 2");
     }
 }
