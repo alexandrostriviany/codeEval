@@ -1,29 +1,28 @@
 package com.codeEval;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * Created by Oleksandr_Mosin on 10/17/2016.
  */
 public class BlackCard {
     public static void runBlackCard(String line) {
-        String fakeName = "NULL";
         String[] array = line.split("\\| ");
-        String[] nameSet = array[0].split(" ");
-        int path = Integer.parseInt(array[1]);
-        for (int i = 0; i < nameSet.length-1; i++) {
-            while (path > nameSet.length) {
-                path = path % nameSet.length - 1;
+        int path;
+        List<String> namesList = new ArrayList<>();
+        String[] names = array[0].split(" ");
+        Collections.addAll(namesList,names);
+        while (namesList.size() > 1) {
+            path = Integer.parseInt(array[1]);
+            while (path > namesList.size()) {
+                path = path % namesList.size();
             }
-            if (path-1 < 0){
-                nameSet[0] = fakeName;
-            }else {
-                nameSet[path - 1] = fakeName;
-            }
-            path++;
+            path = path == 0 ? 2 : path;
+            namesList.remove(path - 1);
         }
-        for (String k:nameSet) {
-            if (!k.equals(fakeName)){
-                System.out.println(k);
-            }
-        }
+        System.out.println(namesList.get(0));
     }
 }
+
