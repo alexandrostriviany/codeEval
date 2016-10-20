@@ -12,21 +12,24 @@ public class Football {
         String[]string = line.replace("| ","").split(" ");
         String answer;
         String[]countries = line.split("\\| ");
-        List<String> teams = new ArrayList<>();
-        for (int i = 0; i<string.length; i++){
-            if(!teams.contains(string[i])){
-                teams.add(string[i]);
+        List<Integer> teams = new ArrayList<>();
+        for (String number: string){
+            if(!teams.contains(Integer.parseInt(number))){
+                teams.add(Integer.parseInt(number));
             }
         }
         Collections.sort(teams);
-        for (String team : teams) {
+        for (Integer team : teams) {
             answer = team + ":";
             for (int j = 0; j<countries.length; j++) {
-                if(countries[j].contains(team)){
-                    answer = answer + (j+1) + ",";
+                String[] country = countries[j].split(" ");
+                for(int x=0; x<country.length; x++){
+                    if (Integer.parseInt(country[x]) == team) {
+                        answer = answer + (j+1) + ",";
+                    }
                 }
             }
-           System.out.print(answer.substring(0,answer.length()-1) + "; ");
+            System.out.print(answer.substring(0,answer.length()-1) + "; ");
         }
         System.out.println();
     }
