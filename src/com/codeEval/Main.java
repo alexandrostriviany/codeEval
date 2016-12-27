@@ -4,6 +4,10 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+
+        EvalAdder.runEvalAdder("WUNESW\n" +
+                "Z1RNNE\n");
+
         // MersennePrime.runMersennePrime("4");
         // SlangFavor.runSlangFavor(
         // "one. two! three? four. five! six? seven.");
@@ -23,5 +27,8 @@ public class Main {
         // BlackCard.runBlackCard("     Mqtfk  | 7");
         // LongestWord.runLongestWord("another line");
         ShortestRepetition.runShortestRepetition("jnbkjnkjnkjnkjnkjnkjnkjn");
+        CalculateDistance.runCalculateDistance("(47, 43) (-25, -11)");
+        UniqueElemrents.runUniqueElemrents("14,14,15,15,16,17,17,17,18,19,20,21,21,22");
+        CleanUpTheWords.runCleanUpTheWords("13What213are;11you-123+138doing7777");
     }
 }
