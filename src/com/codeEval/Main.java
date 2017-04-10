@@ -26,9 +26,12 @@ public class Main {
         // | 46 1 2 15 4 | 38 41 16 | 26 27 13 | 17 | 26 30 17 22 45 41 2");
         // BlackCard.runBlackCard("     Mqtfk  | 7");
         // LongestWord.runLongestWord("another line");
-        ShortestRepetition.runShortestRepetition("jnbkjnkjnkjnkjnkjnkjnkjn");
-        CalculateDistance.runCalculateDistance("(47, 43) (-25, -11)");
-        UniqueElemrents.runUniqueElemrents("14,14,15,15,16,17,17,17,18,19,20,21,21,22");
-        CleanUpTheWords.runCleanUpTheWords("13What213are;11you-123+138doing7777");
+        //ShortestRepetition.runShortestRepetition("jnbkjnkjnkjnkjnkjnkjnkjn");
+        //CalculateDistance.runCalculateDistance("(47, 43) (-25, -11)");
+        //UniqueElemrents.runUniqueElemrents("14,14,15,15,16,17,17,17,18,19,20,21,21,22");
+        //CleanUpTheWords.runCleanUpTheWords("13What213are;11you-123+138doing7777");
+        //ReadMore.runReadMore("Amy Lawrence was proud and glad, and she tried to make Tom see it in her face - but he wouldn't look.");
+        //MatrixRotation.runMatrixRotation("e x t s h d b s t a e w v x c m p q r n e i g a u c b q k");
+        Fibonacci.getNumber(-5);
     }
 }
