@@ -7,7 +7,7 @@ public class Main {
 
         EvalAdder.runEvalAdder("WUNESW\n" +
                 "Z1RNNE\n");
-
+        System.out.println(Factorial.convert("жопа"));
         // MersennePrime.runMersennePrime("4");
         // SlangFavor.runSlangFavor(
         // "one. two! three? four. five! six? seven.");
